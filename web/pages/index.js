@@ -76,6 +76,7 @@ export default function Home() {
               className={styles.profileImage}
               width={500}
               height={750}
+              priority={1}
               alt="company owner"
             />
           </div>
