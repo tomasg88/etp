@@ -14,7 +14,7 @@ export default function Home() {
           name="description"
           content="Sitio web oficial de Enciende tu Poder"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/jpg RGB/iso/Enciende-Logo-Iso.jpg" />
       </Head>
 
       <main className={styles.main}>
