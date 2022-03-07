@@ -25,6 +25,7 @@ export default function Home() {
               layout="responsive"
               width={400}
               height={150}
+              alt="logo"
             />
           </div>
           <h1 className={clsx(styles.text, styles.title)}>Próximamente</h1>
@@ -65,6 +66,7 @@ export default function Home() {
               layout="fixed"
               height={300}
               width={300}
+              alt="effect"
             />
           </div>
           <div className={styles.imageContainer}>
@@ -74,6 +76,7 @@ export default function Home() {
               className={styles.profileImage}
               width={500}
               height={750}
+              alt="company owner"
             />
           </div>
         </section>
