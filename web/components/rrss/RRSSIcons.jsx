@@ -14,12 +14,12 @@ export default function RRSSIcons() {
           <AiFillInstagram color="#a6895a" size={48} />
         </a>
       </Link>
-      <Link href="https://www.facebook.com/enciendetupoder">
+      <Link href="https://open.spotify.com/user/eqt6mpr8t7x3pfjvkmxdlg3cx">
         <a target="_blank">
           <FaSpotify color="#a6895a" size={40} />
         </a>
       </Link>
-      <Link href="https://www.facebook.com/enciendetupoder">
+      <Link href="https://www.youtube.com/channel/UCatabIPr9cFwwkspuP3XO9w">
         <a target="_blank">
           <FaYoutube color="#a6895a" size={40} />
         </a>
@@ -29,7 +29,7 @@ export default function RRSSIcons() {
           <IoLogoWhatsapp color="#a6895a" size={40} />
         </a>
       </Link>
-      <Link href="https://api.whatsapp.com/send?phone=5491168640045">
+      <Link href="mailto:holaenciendetupoder@gmail.com">
         <a target="_blank">
           <MdEmail color="#a6895a" size={44} />
         </a>
