@@ -36,8 +36,12 @@ export default function Buttons() {
 
   return (
     <div className={styles.container}>
-      {BUTTON_INFO.map(({ text }) => (
-        <button key={text}>{text}</button>
+      {BUTTON_INFO.map(({ text, href }) => (
+        <button key={href}>
+          <a href={href} target="_blank">
+            {text.toUpperCase()}
+          </a>
+        </button>
       ))}
     </div>
   );
