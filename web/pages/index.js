@@ -31,7 +31,8 @@ export default function Home() {
 
           <h1 className={clsx(styles.text, styles.title)}>Próximamente</h1>
           <h3 className={clsx(styles.text, styles.description)}>
-            Mientras construimos el sitio, encontrá todo para tu bienestar
+            Mientras construimos el sitio encontrá todo para elevar tu energía y
+            bienestar
           </h3>
 
           <Buttons />
