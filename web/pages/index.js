@@ -2,8 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import clsx from "clsx";
-import { FaFacebookSquare, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import Link from "next/link";
+import Buttons from "../components/button/Buttons";
+import RRSSIcons from "../components/rrss/RRSSIcons";
 
 export default function Home() {
   return (
@@ -28,34 +28,15 @@ export default function Home() {
               alt="logo"
             />
           </div>
+
           <h1 className={clsx(styles.text, styles.title)}>Próximamente</h1>
           <h3 className={clsx(styles.text, styles.description)}>
             Mientras construimos el sitio, encontrá todo para tu bienestar
           </h3>
-          <div className={styles.buttonList}>
-            <button>Ebook Gratuito - Todo sobre Sahumo</button>
-            <button>Conectá con la Gratitud - LadiesBrunch</button>
-            <button>Ebook Gratuito - Todo sobre Sahumo</button>
-            <button>Ebook Gratuito - Todo sobre Sahumo</button>
-            <button>Ver más</button>
-          </div>
-          <div className={styles.rrss}>
-            <Link href="https://www.facebook.com/enciendetupoder">
-              <a target="_blank">
-                <FaFacebookSquare color="#a6895a" size={40} />
-              </a>
-            </Link>
-            <Link href="https://api.whatsapp.com/send?phone=5491168640045">
-              <a target="_blank">
-                <FaWhatsapp color="#a6895a" size={40} />
-              </a>
-            </Link>
-            <Link href="https://instagram.com/enciendetupoder">
-              <a target="_blank">
-                <FaInstagram color="#a6895a" size={40} />
-              </a>
-            </Link>
-          </div>
+
+          <Buttons />
+
+          <RRSSIcons />
         </section>
 
         <section className={styles.right}>
@@ -77,7 +58,7 @@ export default function Home() {
               width={500}
               height={750}
               priority={1}
-              alt="company owner"
+              alt="Candela Manzi"
             />
           </div>
         </section>
