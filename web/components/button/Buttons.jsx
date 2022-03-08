@@ -38,7 +38,7 @@ export default function Buttons() {
     <div className={styles.container}>
       {BUTTON_INFO.map(({ text, href }) => (
         <button key={href}>
-          <a href={href} target="_blank">
+          <a href={href} target="_blank" rel="noreferrer">
             {text.toUpperCase()}
           </a>
         </button>
