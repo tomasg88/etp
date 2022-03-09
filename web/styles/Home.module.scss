@@ -39,6 +39,7 @@
       .description {
         font-family: $font-monserrat;
         margin-bottom: 2rem;
+        text-align: center;
       }
     }
 
@@ -68,7 +69,24 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (max-width: $breakpoint-sm) {
+  .container {
+    .main {
+      .left {
+        background-color: rgba($background-pink, 0.4);
+        padding-top: 1rem;
+        .logoContainer {
+          width: 300px;
+        }
+      }
+      .right {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
   .container {
     .main {
       padding: 0;

@@ -18,3 +18,12 @@ $text-white: #fff;
 $text-black: #000;
 
 // SIZES AND MEASURES
+//
+// Small: 0 < sm <= 768
+// Medium: 768 < md <= 1100
+// Large: 1100 < lg <= 1400
+// X-large: 1400 <= xl
+
+$breakpoint-sm: 768px;
+$breakpoint-md: 1100px;
+$breakpoint-xl: 1400px;

@@ -16,3 +16,13 @@
     letter-spacing: 2px;
   }
 }
+
+@media (max-width: $breakpoint-sm) {
+  .container {
+    width: 90%;
+    button {
+      font-size: small;
+      padding: 1rem 1rem;
+    }
+  }
+}
