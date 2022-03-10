@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.scss";
 import clsx from "clsx";
 import Buttons from "../components/button/Buttons";
 import RRSSIcons from "../components/rrss/RRSSIcons";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -20,13 +21,33 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.left}>
           <div className={styles.logoContainer}>
-            <Image
-              src="/png/horizontales/Enciende-Logo-horizontal.png"
-              layout="responsive"
-              width={400}
-              height={150}
-              alt="logo"
-            />
+            <motion.div
+              initial="hidden"
+              animate="animate"
+              variants={{
+                hidden: {
+                  position: "relative",
+                  left: -200,
+                  opacity: 0,
+                },
+                animate: {
+                  position: "relative",
+                  left: 0,
+                  opacity: 1,
+                  transition: {
+                    delay: 2,
+                  },
+                },
+              }}
+            >
+              <Image
+                src="/png/horizontales/Enciende-Logo-horizontal.png"
+                layout="responsive"
+                width={400}
+                height={150}
+                alt="logo"
+              />
+            </motion.div>
           </div>
 
           <h1 className={clsx(styles.text, styles.title)}>Próximamente</h1>
