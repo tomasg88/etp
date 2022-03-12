@@ -1,6 +1,6 @@
 import React from "react";
 import { useMemo } from "react";
-
+import { motion } from "framer-motion";
 import styles from "./Buttons.module.scss";
 
 export default function Buttons() {
@@ -36,12 +36,27 @@ export default function Buttons() {
 
   return (
     <div className={styles.container}>
-      {BUTTON_INFO.map(({ text, href }) => (
-        <button key={href}>
+      {BUTTON_INFO.map(({ text, href }, index) => (
+        <motion.button
+          key={href}
+          initial="initial"
+          animate="animate"
+          variants={{
+            initial: {
+              opacity: 0,
+            },
+            animate: {
+              opacity: 1,
+              transition: {
+                delay: 0.2 * index,
+              },
+            },
+          }}
+        >
           <a href={href} target="_blank" rel="noreferrer">
             {text.toUpperCase()}
           </a>
-        </button>
+        </motion.button>
       ))}
     </div>
   );
