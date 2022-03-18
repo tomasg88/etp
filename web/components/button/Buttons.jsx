@@ -1,7 +1,7 @@
-import React from "react";
-import { useMemo } from "react";
-import { motion } from "framer-motion";
-import styles from "./Buttons.module.scss";
+import React from "react"
+import { useMemo } from "react"
+import { motion } from "framer-motion"
+import styles from "./Buttons.module.scss"
 
 export default function Buttons() {
   const BUTTON_INFO = useMemo(
@@ -32,7 +32,7 @@ export default function Buttons() {
       },
     ],
     []
-  );
+  )
 
   return (
     <div className={styles.container}>
@@ -59,5 +59,5 @@ export default function Buttons() {
         </motion.button>
       ))}
     </div>
-  );
+  )
 }

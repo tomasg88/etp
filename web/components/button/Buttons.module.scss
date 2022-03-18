@@ -1,19 +1,10 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70%;
+  @apply flex w-3/4 flex-col items-center;
 
   button {
-    margin-bottom: 2rem;
-    padding: 1rem 0;
-    width: 100%;
-    border-radius: 2rem;
-    border: none;
-    font-size: large;
+    @apply mb-8;
+    @apply w-full rounded-full py-4 text-lg tracking-widest text-white;
     background-color: $background-purple;
-    color: $text-white;
-    letter-spacing: 2px;
   }
 }
 
