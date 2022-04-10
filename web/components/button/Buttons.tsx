@@ -1,10 +1,15 @@
-import React from "react"
+import React, { Key } from "react"
 import { useMemo } from "react"
 import { motion } from "framer-motion"
 import styles from "./Buttons.module.scss"
 
+interface Button {
+  text: string
+  href: string
+}
+
 export default function Buttons() {
-  const BUTTON_INFO = useMemo(
+  const BUTTON_INFO = useMemo<Button[]>(
     () => [
       {
         text: "Ebook Gratuito - Todo Sobre Sahumo",

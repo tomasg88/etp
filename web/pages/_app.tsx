@@ -1,7 +1,8 @@
-import "../styles/globals.scss";
-import { motion } from "framer-motion";
+import "../styles/globals.scss"
+import { motion } from "framer-motion"
+import type { AppProps } from "next/app"
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <motion.div
       initial="pageInitial"
@@ -20,7 +21,7 @@ function MyApp({ Component, pageProps }) {
     >
       <Component {...pageProps} />
     </motion.div>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp
