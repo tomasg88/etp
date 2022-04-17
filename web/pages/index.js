@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.scss";
-import clsx from "clsx";
-import Buttons from "../components/button/Buttons";
-import RRSSIcons from "../components/rrss/RRSSIcons";
-import { motion } from "framer-motion";
+import Head from "next/head"
+import Image from "next/image"
+import styles from "../styles/Home.module.scss"
+import clsx from "clsx"
+import Buttons from "../components/button/Buttons"
+import RRSSIcons from "../components/rrss/RRSSIcons"
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
@@ -51,7 +51,9 @@ export default function Home() {
           </div>
 
           <h1 className={clsx(styles.text, styles.title)}>Próximamente</h1>
-          <h3 className={clsx(styles.text, styles.description)}>
+          <h3
+            className={clsx(styles.text, styles.description, "font-pink-400")}
+          >
             Mientras construimos el sitio encontrá todo para elevar tu energía y
             bienestar
           </h3>
@@ -86,5 +88,5 @@ export default function Home() {
         </section>
       </main>
     </div>
-  );
+  )
 }
