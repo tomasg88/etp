@@ -1,7 +1,3 @@
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 2rem 0 3rem;
-  width: 18rem;
+  @apply w-72 flex items-center justify-around mt-8 ml-0 mb-12
 }
