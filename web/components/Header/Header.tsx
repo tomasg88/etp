@@ -14,7 +14,7 @@ const Header: FC = () => {
           alt="logo"
         />
       </div>
-      <div className="font-proxima-nova font-bold text-purple-400">
+      <div className="font-proxima-nova font-bold tracking-wide text-purple-400">
         <Link href="/about">
           <a className="ml-20">ABOUT</a>
         </Link>
