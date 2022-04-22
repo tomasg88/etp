@@ -4,7 +4,7 @@ import React, { FC } from "react"
 
 const Header: FC = () => {
   return (
-    <div className="flex h-40 w-full items-center justify-between border-black bg-pink-400 px-28">
+    <div className="border-black flex h-40 w-full items-center justify-between bg-pink-400 px-28">
       <div className="block h-20 w-56">
         <Image
           src="/png/horizontales/Enciende-Logo-horizontal.png"
@@ -14,7 +14,7 @@ const Header: FC = () => {
           alt="logo"
         />
       </div>
-      <div className="font-proxima-nova font-bold tracking-wide text-purple-400">
+      <div className="z-10 font-proxima-nova font-bold tracking-wide text-purple-400">
         <Link href="/about">
           <a className="ml-20">ABOUT</a>
         </Link>
