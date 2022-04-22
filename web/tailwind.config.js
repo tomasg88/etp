@@ -6,15 +6,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        gray: {
+          800: "#2E3439",
+        },
         gold: {
           300: "#D0AB67",
           400: "#C8AC86",
+          500: "#C9AD87",
           600: "#9B8054",
         },
         orange: {
           400: "#F7966B",
         },
         pink: {
+          300: "#FCDED7",
           400: "#FCDDD6",
         },
         purple: {
