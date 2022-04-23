@@ -4,7 +4,7 @@ export default function ChakrasSection() {
   return (
     <section
       aria-label="Bienestar"
-      className="relative w-full px-28 py-24"
+      className="relative w-full px-28 pt-24 pb-20"
       id="chakras"
       role="contentinfo"
     >

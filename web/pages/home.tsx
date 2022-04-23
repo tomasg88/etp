@@ -4,6 +4,7 @@ import Points from "../components/Backgrounds/Points"
 import WelcomeSection from "../components/Home/WelcomeSection"
 import ProfileSection from "../components/Home/ProfileSection"
 import ChakrasSection from "../components/Home/ChakrasSection"
+import ReviewsSection from "../components/Home/ReviewsSection"
 
 interface HomeProps {}
 
@@ -18,6 +19,8 @@ const Home: HomeProps = () => {
         <WelcomeSection />
         <ProfileSection />
         <ChakrasSection />
+
+        <ReviewsSection />
       </main>
     </Layout>
   )
