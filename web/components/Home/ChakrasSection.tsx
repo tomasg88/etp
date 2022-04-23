@@ -58,6 +58,11 @@ export default function ChakrasSection() {
           />
         </div>
       </div>
+      <img
+        alt="figura fondo"
+        className="absolute right-0 -bottom-2/3 "
+        src="./images/home-right-middle.png"
+      />
     </section>
   )
 }
