@@ -4,6 +4,7 @@ export default function Points() {
   return (
     <div className="absolute inset-0 opacity-80">
       <svg
+        className="animate-pulse-slow"
         fill="none"
         viewBox="0 0 1115 622"
         xmlns="http://www.w3.org/2000/svg"

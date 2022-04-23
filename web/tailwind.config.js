@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       animation: {
         "spin-slow": "spin 20s linear infinite",
+        "pulse-slow": "pulse-completely 5s linear infinite",
       },
       colors: {
         gray: {
@@ -40,6 +41,12 @@ module.exports = {
         montserrat: ["Montserrat"],
         playfair: ["Playfair"],
         "proxima-nova": ['"Proxima Nova"'],
+      },
+      keyframes: {
+        "pulse-completely": {
+          "0%, 100%": { opacity: 1 },
+          "50%": { opacity: 0 },
+        },
       },
     },
   },
