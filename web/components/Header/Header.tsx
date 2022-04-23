@@ -4,14 +4,14 @@ import React, { FC } from "react"
 
 const Header: FC = () => {
   return (
-    <div className="border-black flex h-40 w-full items-center justify-between bg-pink-400 px-28">
+    <div className="flex h-40 w-full items-center justify-between border-black bg-pink-400 px-28">
       <div className="block h-20 w-56">
         <Image
-          src="/png/horizontales/Enciende-Logo-horizontal.png"
-          layout="responsive"
-          width={100}
-          height={36}
           alt="logo"
+          height={36}
+          layout="responsive"
+          src="/png/horizontales/Enciende-Logo-horizontal.png"
+          width={100}
         />
       </div>
       <div className="z-10 font-proxima-nova font-bold tracking-wide text-purple-400">

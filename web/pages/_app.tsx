@@ -5,8 +5,8 @@ import type { AppProps } from "next/app"
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <motion.div
-      initial="pageInitial"
       animate="pageAnimate"
+      initial="pageInitial"
       variants={{
         pageInitial: {
           opacity: 0,

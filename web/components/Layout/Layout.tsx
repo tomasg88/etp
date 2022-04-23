@@ -29,27 +29,27 @@ const Layout = ({
     <>
       <Head>
         <title>{formattedTitle}</title>
-        <meta name="title" content={formattedTitle} />
-        <meta name="description" content={formattedDescription} />
-        <meta name="robots" content="index, follow" />
+        <meta content={formattedTitle} name="title" />
+        <meta content={formattedDescription} name="description" />
+        <meta content="index, follow" name="robots" />
 
         {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={DEFAULT_PAGE_URL} />
-        <meta property="og:title" content={formattedTitle} />
-        <meta property="og:description" content={formattedDescription} />
-        <meta property="og:image" content={formattedImage} />
+        <meta content="website" property="og:type" />
+        <meta content={DEFAULT_PAGE_URL} property="og:url" />
+        <meta content={formattedTitle} property="og:title" />
+        <meta content={formattedDescription} property="og:description" />
+        <meta content={formattedImage} property="og:image" />
 
         {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={DEFAULT_PAGE_URL} />
-        <meta property="twitter:title" content={formattedTitle} />
-        <meta property="twitter:description" content={formattedDescription} />
-        <meta property="twitter:image" content={formattedImage} />
+        <meta content="summary_large_image" property="twitter:card" />
+        <meta content={DEFAULT_PAGE_URL} property="twitter:url" />
+        <meta content={formattedTitle} property="twitter:title" />
+        <meta content={formattedDescription} property="twitter:description" />
+        <meta content={formattedImage} property="twitter:image" />
 
         {/* Otros */}
-        <meta name="msapplication-TileColor" content={DEFAULT_MAIN_COLOR} />
-        <meta name="theme-color" content={DEFAULT_MAIN_COLOR} />
+        <meta content={DEFAULT_MAIN_COLOR} name="msapplication-TileColor" />
+        <meta content={DEFAULT_MAIN_COLOR} name="theme-color" />
 
         {/* TODO - wrap up the meta part */}
         {/* <link
