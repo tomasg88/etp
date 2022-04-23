@@ -1,5 +1,6 @@
 import React from "react"
 
+/* eslint-disable no-unused-vars */
 enum Positions {
   TOP = "TOP",
   BOTTOM = "BOTTOM",
@@ -35,8 +36,8 @@ const TwoColorMoon = ({ position }) => {
 export default function LandingAnimation() {
   return (
     <div
-      id="animation"
       className="absolute right-28 top-10 flex animate-spin-slow items-center justify-center rounded-full border border-dashed border-gold-600"
+      id="animation"
       style={{ width: "550px", height: "550px" }}
     >
       <TwoColorMoon position={Positions.TOP} />
