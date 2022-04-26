@@ -23,6 +23,7 @@ module.exports = {
           400: "#F7966B",
         },
         pink: {
+          200: "#FDDED6",
           300: "#FCDED7",
           400: "#FCDDD6",
         },
