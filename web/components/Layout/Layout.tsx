@@ -7,6 +7,7 @@ import {
   DEFAULT_PAGE_URL,
   DEFAULT_TITLE,
 } from "../../utils/constants"
+import Footer from "../Footer/Footer"
 import Header from "../Header/Header"
 
 interface LayoutProps {
@@ -79,6 +80,7 @@ const Layout = ({
       <div>
         <Header />
         {children}
+        <Footer />
       </div>
     </>
   )
