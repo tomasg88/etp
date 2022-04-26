@@ -1,8 +1,9 @@
 import React from "react"
+import ReviewCard from "../Cards/ReviewCard"
 
 export default function ReviewsSection() {
   return (
-    <section className="w-full" id="reviews">
+    <section className="w-full pb-32" id="reviews">
       <div className="mb-16">
         <img
           alt="figura"
@@ -17,18 +18,13 @@ export default function ReviewsSection() {
           eget pretium. Ornare vitae aliquet risus elementum ac sed aenean dui.{" "}
         </p>
       </div>
-      <div className="w-full pb-10 text-center" id="review-container">
-        <div className="block w-[392px] rounded-3xl bg-purple-300 px-10 py-16 font-proxima-nova text-white">
-          <p className="text-base">
-            Atraje muchas mujeres con buena onda y agradecidas. Me encantó que
-            me sacaras una carta del Oráculo de ilumunación y mi Podcast{" "}
-            <strong>“Desapégate de tu ex” creció exponentemente!</strong>
-          </p>
-          <br />
-          <p className="font-proxima-nova text-lg font-bold tracking-wider text-pink-400">
-            Romi @serexcepcional
-          </p>
-        </div>
+      <div
+        className="flex w-full items-center justify-center pb-10 text-center"
+        id="review-container"
+      >
+        <ReviewCard />
+        <ReviewCard active />
+        <ReviewCard />
       </div>
     </section>
   )
