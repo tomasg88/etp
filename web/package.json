@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "cd web && husky install"
+    "prepare": "cd .. && husky install web/.husky"
   },
   "dependencies": {
     "framer-motion": "^6.2.8",
