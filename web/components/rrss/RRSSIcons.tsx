@@ -1,10 +1,10 @@
-import React from "react";
-import { FaSpotify, FaYoutube } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { MdEmail } from "react-icons/md";
-import Link from "next/link";
-import styles from "./RRSSIcons.module.scss";
+import React from "react"
+import { FaSpotify, FaYoutube } from "react-icons/fa"
+import { AiFillInstagram } from "react-icons/ai"
+import { IoLogoWhatsapp } from "react-icons/io"
+import { MdEmail } from "react-icons/md"
+import Link from "next/link"
+import styles from "./RRSSIcons.module.scss"
 
 export default function RRSSIcons() {
   return (
@@ -35,5 +35,5 @@ export default function RRSSIcons() {
         </a>
       </Link>
     </div>
-  );
+  )
 }
