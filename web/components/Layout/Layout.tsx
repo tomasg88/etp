@@ -5,16 +5,17 @@ import Header from "../Header/Header"
 
 interface LayoutProps {
   children: JSX.Element | JSX.Element[]
+  noFooter?: boolean
 }
 
-const Layout = ({ children, ...restProps }: LayoutProps) => {
+const Layout = ({ children, noFooter, ...restProps }: LayoutProps) => {
   return (
     <>
       <DefaultHead {...restProps} />
       <div>
         <Header />
         {children}
-        <Footer />
+        {!noFooter && <Footer />}
       </div>
     </>
   )
