@@ -35,7 +35,7 @@ const PAGES: Page[] = [
     name: "SERVICIOS",
   },
   {
-    href: "/contacto",
+    href: "/contact",
     name: "CONTACTO",
   },
 ]

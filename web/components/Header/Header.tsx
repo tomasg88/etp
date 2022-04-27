@@ -21,7 +21,7 @@ const Header: FC = () => {
         <Link href="/servicios">
           <a className="ml-20">SERVICIOS</a>
         </Link>
-        <Link href="/contacto">
+        <Link href="/contact">
           <a className="ml-20">CONTACTO</a>
         </Link>
       </div>
