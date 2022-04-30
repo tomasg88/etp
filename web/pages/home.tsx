@@ -10,7 +10,7 @@ interface HomeProps {}
 
 const Home: HomeProps = () => {
   return (
-    <Layout>
+    <Layout header>
       <main className="bg-pink-300">
         <div className="absolute right-0 top-0">
           <img alt="shape" src="./images/home-top-right.png" />
@@ -19,7 +19,6 @@ const Home: HomeProps = () => {
         <WelcomeSection />
         <ProfileSection />
         <ChakrasSection />
-
         <ReviewsSection />
       </main>
     </Layout>

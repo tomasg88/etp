@@ -7,3 +7,7 @@ export interface SocialNetwork {
   icon: () => JSX.Element
   href: string
 }
+
+export interface SVGProps {
+  fill: string;
+}
