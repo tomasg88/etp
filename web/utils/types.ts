@@ -3,8 +3,10 @@ export interface Page {
   name: string;
 }
 
+type IconFn = (css: string) => JSX.Element
+
 export interface SocialNetwork {
-  icon: () => JSX.Element
+  icon: IconFn
   href: string
 }
 

@@ -1,29 +1,8 @@
 import React from "react"
 import WrittenLogo from "../svgs/WrittenLogo"
-import { AiOutlineInstagram } from "react-icons/ai"
-import { FaSpotify, FaYoutube } from "react-icons/fa"
-import { IoLogoWhatsapp } from "react-icons/io"
 import Link from "next/link"
-import { Page, SocialNetwork } from "../../utils/types"
-
-const RRSSData: SocialNetwork[] = [
-  {
-    icon: () => <FaYoutube className="ml-3 text-2xl text-pink-400" />,
-    href: "https://www.youtube.com/channel/UCatabIPr9cFwwkspuP3XO9w",
-  },
-  {
-    icon: () => <FaSpotify className="ml-3 text-2xl text-pink-400" />,
-    href: "https://open.spotify.com/user/eqt6mpr8t7x3pfjvkmxdlg3cx",
-  },
-  {
-    icon: () => <AiOutlineInstagram className="ml-3 text-2xl text-pink-400" />,
-    href: "https://instagram.com/enciendetupoder",
-  },
-  {
-    icon: () => <IoLogoWhatsapp className="ml-3 text-2xl text-pink-400" />,
-    href: "https://api.whatsapp.com/send?phone=5491168640045",
-  },
-]
+import { Page } from "../../utils/types"
+import SocialNetworkIcons from "./SocialNetworkIcons"
 
 const PAGES: Page[] = [
   {
@@ -53,13 +32,7 @@ export default function Footer() {
           </Link>
         ))}
       </div>
-      <div className="flex items-center justify-around">
-        {RRSSData.map(({ icon, href }) => (
-          <Link href={href} key={href}>
-            <a target="_blank">{icon()}</a>
-          </Link>
-        ))}
-      </div>
+      <SocialNetworkIcons iconCss="ml-3 text-2xl text-pink-400" />
     </footer>
   )
 }
