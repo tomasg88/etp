@@ -1,23 +1,8 @@
-import React from "react"
-import WrittenLogo from "../svgs/WrittenLogo"
-import Link from "next/link"
-import { Page } from "../../utils/types"
-import SocialNetworkIcons from "./SocialNetworkIcons"
-
-const PAGES: Page[] = [
-  {
-    href: "/about",
-    name: "ABOUT",
-  },
-  {
-    href: "/servicios",
-    name: "SERVICIOS",
-  },
-  {
-    href: "/contact",
-    name: "CONTACTO",
-  },
-]
+import React from 'react'
+import WrittenLogo from '../svgs/WrittenLogo'
+import Link from 'next/link'
+import SocialNetworkIcons from './SocialNetworkIcons'
+import { PAGES } from '../../utils/constants'
 
 export default function Footer() {
   return (

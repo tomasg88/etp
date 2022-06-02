@@ -1,33 +1,9 @@
-import Image from "next/image"
-import Link from "next/link"
-import React, { useState } from "react"
-import CloseMenuIcon from "../svgs/CloseMenuIcon"
-import MenuIcon from "../svgs/MenuIcon"
-// import { Positions, TwoColorMoon } from "../Shapes/TwoColorMoon"
-
-interface Route {
-  text: string
-  href: string
-}
-
-const ROUTES: Route[] = [
-  {
-    text: "Home",
-    href: "/",
-  },
-  {
-    text: "About",
-    href: "/about",
-  },
-  {
-    text: "Servicios",
-    href: "/services",
-  },
-  {
-    text: "Contacto",
-    href: "/contact",
-  },
-]
+import Image from 'next/image'
+import Link from 'next/link'
+import React, { useState } from 'react'
+import { HOME_PAGE, PAGES } from '../../utils/constants'
+import CloseMenuIcon from '../svgs/CloseMenuIcon'
+import MenuIcon from '../svgs/MenuIcon'
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false)
@@ -87,11 +63,11 @@ export default function Menu() {
           src="./images/svg/logo-escrito.svg"
         />
         <nav className="z-10 list-none text-center">
-          {ROUTES.map(({ href, text }) => (
+          {[HOME_PAGE, ...PAGES].map(({ href, name }) => (
             <li className="my-16" key={href}>
               <Link href={href}>
                 <a className="font-playfair text-7xl leading-[101.8%] text-pink-200 hover:italic hover:text-orange-400">
-                  {text}
+                  {name}
                 </a>
               </Link>
             </li>

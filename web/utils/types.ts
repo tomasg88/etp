@@ -1,6 +1,13 @@
+export enum PageNames {
+  HOME = 'HOME',
+  ABOUT = 'ABOUT',
+  CONTACT = 'CONTACTO',
+  SERVICES = 'SERVICIOS'
+}
+
 export interface Page {
   href: string;
-  name: string;
+  name: PageNames;
 }
 
 type IconFn = (css: string) => JSX.Element
