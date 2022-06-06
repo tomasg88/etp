@@ -1,4 +1,4 @@
-import React, { Key } from "react"
+import React from "react"
 import { useMemo } from "react"
 import { motion } from "framer-motion"
 import styles from "./Buttons.module.scss"
@@ -43,9 +43,9 @@ export default function Buttons() {
     <div className={styles.container}>
       {BUTTON_INFO.map(({ text, href }, index) => (
         <motion.button
-          key={href}
-          initial="initial"
           animate="animate"
+          initial="initial"
+          key={href}
           variants={{
             initial: {
               opacity: 0,
@@ -58,7 +58,7 @@ export default function Buttons() {
             },
           }}
         >
-          <a href={href} target="_blank" rel="noreferrer">
+          <a href={href} rel="noreferrer" target="_blank">
             {text.toUpperCase()}
           </a>
         </motion.button>

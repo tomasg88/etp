@@ -18,29 +18,26 @@
 @font-face {
   font-family: "ProximaNova";
   src: url("/fonts/Proxima Nova Regular.otf");
-  font-style: medium;
+  font-style: normal;
   font-weight: 400;
-  font-display: swap;
 }
 @font-face {
   font-family: "ProximaNova";
   src: url("/fonts/Proxima Nova Bold.otf");
-  font-style: medium;
-  font-weight: bold;
-  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
 }
 @font-face {
   font-family: "ProximaNova";
   src: url("/fonts/Proxima Nova Extrabold.otf");
-  font-style: medium;
-  font-weight: bolder;
-  font-display: swap;
+  font-style: normal;
+  font-weight: 800;
 }
 @font-face {
   font-family: "ProximaNova";
   src: url("/fonts/Proxima Nova Black.otf");
-  font-style: medium;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 900;
   font-display: swap;
 }
 
@@ -48,7 +45,7 @@
 @font-face {
   font-family: "Playfair";
   src: url("/fonts/PlayfairDisplay-Black.ttf");
-  font-style: medium;
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
