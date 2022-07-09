@@ -5,7 +5,7 @@ import { PAGES } from '../../utils/constants'
 
 const Header: FC = () => {
   return (
-    <div className="flex h-40 w-full items-center justify-between border-black bg-pink-400 px-28">
+    <header className="flex h-40 w-full items-center justify-between border-black bg-pink-400 px-28">
       <div className="block h-20 w-56">
         <Link href="/">
           <a>
@@ -19,14 +19,14 @@ const Header: FC = () => {
           </a>
         </Link>
       </div>
-      <div className="z-10 font-proxima-nova font-bold tracking-wide text-purple-400">
+      <nav className="z-10 font-proxima-nova font-bold tracking-wide text-purple-400">
         {PAGES.map(({ href, name }) => (
           <Link href={href} key={href}>
             <a className="ml-20">{name}</a>
           </Link>
         ))}
-      </div>
-    </div>
+      </nav>
+    </header>
   )
 }
 
