@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react'
 
 export default function ProfileSection() {
   return (
     <section
-      className="relative flex w-full items-center justify-start px-28 pb-20"
+      className="relative flex w-full items-center justify-start pb-20"
       id="profile"
     >
       <img
@@ -31,7 +31,7 @@ export default function ProfileSection() {
           sapien sed proin quisque sed dui amet, volutpat. Elit imperdiet in
           placerat lectus a vitae praesent dui. Ac interdum euismod aliquam
           imperdiet nulla amet ipsum orci, pharetra. Viverra sollicitudin massa
-          a euismod.{" "}
+          a euismod.{' '}
         </p>
       </div>
       <img

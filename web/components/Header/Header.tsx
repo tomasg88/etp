@@ -5,7 +5,7 @@ import { PAGES } from '../../utils/constants'
 
 const Header: FC = () => {
   return (
-    <header className="flex h-40 w-full items-center justify-between border-black bg-pink-400 px-28">
+    <header className="flex h-40 w-full items-center justify-between border-black bg-pink-400">
       <div className="block h-20 w-56">
         <Link href="/">
           <a>

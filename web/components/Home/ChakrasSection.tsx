@@ -1,10 +1,10 @@
-import React from "react"
+import React from 'react'
 
 export default function ChakrasSection() {
   return (
     <section
       aria-label="Bienestar"
-      className="relative w-full px-28 pt-24 pb-20"
+      className="relative w-full pt-24 pb-20"
       id="chakras"
       role="contentinfo"
     >
@@ -16,7 +16,7 @@ export default function ChakrasSection() {
         sapien sed proin quisque sed dui amet, volutpat. Elit imperdiet in
         placerat lectus a vitae praesent dui. Ac interdum euismod aliquam
         imperdiet nulla amet ipsum orci, pharetra. Viverra sollicitudin massa a
-        euismod.{" "}
+        euismod.{' '}
       </p>
       <div className="relative bottom-20 flex justify-center">
         <img alt="human shape" src="./images/human-shape.svg" />

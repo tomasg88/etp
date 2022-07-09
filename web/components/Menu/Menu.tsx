@@ -12,7 +12,7 @@ export default function Menu() {
 
   function renderMenuIcon() {
     return (
-      <div className="flex h-40 w-full items-center justify-between border-black bg-pink-400 px-28">
+      <div className="flex h-40 w-full items-center justify-between border-black bg-pink-400">
         <div className="block w-56">
           <Image
             alt="logo"
