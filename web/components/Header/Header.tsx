@@ -19,10 +19,12 @@ const Header: FC = () => {
           </a>
         </Link>
       </div>
-      <nav className="z-10 font-proxima-nova font-bold tracking-wide text-purple-400">
+      <nav className="z-10 font-proxima-nova font-bold tracking-wide ">
         {PAGES.map(({ href, name }) => (
           <Link href={href} key={href}>
-            <a className="ml-20">{name}</a>
+            <a className="ml-20 text-purple-400 transition-colors hover:text-orange-400 hover:underline hover:underline-offset-8">
+              {name}
+            </a>
           </Link>
         ))}
       </nav>
