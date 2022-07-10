@@ -41,13 +41,13 @@ export default function Menu() {
         id="menu-container"
       >
         <div
-          className="absolute right-20 top-12 z-20 flex items-center"
+          className="absolute right-36 top-12 z-20 flex items-center pt-1"
           onClick={closeMenu}
         >
-          <p className="mr-4 font-playfair text-base leading-[101.8%] text-pink-200">
+          <p className="mr-4 font-playfair text-xl leading-[101.8%] text-pink-200">
             Cerrar
           </p>
-          <div className="rounded-full border border-pink-200">
+          <div className="rounded-full border border-pink-200 p-0">
             <CloseMenuIcon fill="#FDDED6" />
           </div>
         </div>
