@@ -14,13 +14,17 @@ export default function Menu() {
     return (
       <div className="flex h-40 w-full items-center justify-between border-black bg-pink-400">
         <div className="block w-56">
-          <Image
-            alt="logo"
-            height={36}
-            layout="responsive"
-            src="/png/horizontales/Enciende-Logo-horizontal.png"
-            width={100}
-          />
+          <Link href="/home">
+            <a>
+              <Image
+                alt="logo"
+                height={36}
+                layout="responsive"
+                src="/png/horizontales/Enciende-Logo-horizontal.png"
+                width={100}
+              />
+            </a>
+          </Link>
         </div>
         <div className="z-10 flex items-center" onClick={openMenu}>
           <p className="mr-4 font-playfair text-xl leading-[101.8%] text-purple-400">
