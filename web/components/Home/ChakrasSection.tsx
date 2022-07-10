@@ -10,7 +10,7 @@ export default function ChakrasSection() {
       />
       <section
         aria-label="Bienestar"
-        className="relative w-full pt-24 pb-20"
+        className="relative w-full pt-24"
         id="chakras"
         role="contentinfo"
       >

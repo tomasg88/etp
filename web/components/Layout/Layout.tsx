@@ -15,7 +15,7 @@ const Layout = ({ children, noFooter, header, ...restProps }: LayoutProps) => (
     {/* Metas, title, and favicon */}
     <DefaultHead {...restProps} />
 
-    <div className="mx-auto w-full bg-pink-300 2xl:max-w-7xl">
+    <div className="mx-auto w-full bg-pink-300 xl:max-w-6xl 2xl:max-w-7xl">
       {/* Header with pages or Menu feature */}
       {header ? <Header /> : <Menu />}
 

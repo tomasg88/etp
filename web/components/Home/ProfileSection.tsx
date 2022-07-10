@@ -3,16 +3,6 @@ import React from 'react'
 export default function ProfileSection() {
   return (
     <>
-      <img
-        alt="figura fondo"
-        className="absolute top-[45rem] left-0 z-0"
-        src="./images/home-left-middle.png"
-      />
-      <img
-        alt="figura mancha"
-        className="absolute right-0 top-[65rem]"
-        src="./images/mancha3.png"
-      />
       <section
         className="relative flex w-full items-center justify-start pb-20"
         id="profile"
@@ -46,6 +36,16 @@ export default function ProfileSection() {
           src="./images/diamante1.png"
         />
       </section>
+      <img
+        alt="figura fondo"
+        className="absolute top-[45rem] left-0 z-0"
+        src="./images/home-left-middle.png"
+      />
+      <img
+        alt="figura mancha"
+        className="absolute right-0 top-[65rem]"
+        src="./images/mancha3.png"
+      />
     </>
   )
 }

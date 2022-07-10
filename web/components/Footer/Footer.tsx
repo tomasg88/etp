@@ -6,7 +6,7 @@ import { PAGES } from '../../utils/constants'
 
 export default function Footer() {
   return (
-    <footer className="flex w-full justify-between bg-purple-400 px-28 py-6">
+    <footer className="flex w-full justify-between bg-purple-400 py-6 xl:px-36 2xl:px-96">
       <div className="flex items-center justify-start">
         <WrittenLogo className="mr-16" fill="#FCDDD6" />
         {PAGES.map(({ href, name }, i) => (
