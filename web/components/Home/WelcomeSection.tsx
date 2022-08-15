@@ -1,9 +1,9 @@
-import React from "react"
-import LandingAnimation from "../Animations/LandingAnimation"
+import React from 'react'
+import LandingAnimation from '../Animations/LandingAnimation'
 
 export default function WelcomeSection() {
   return (
-    <section className="relative w-full px-28 pt-40 pb-64" id="welcome">
+    <section className="relative w-full pt-40 pb-64" id="welcome">
       <h1 className="font-playfair text-8xl" id="welcome-title">
         Bienvenida
       </h1>

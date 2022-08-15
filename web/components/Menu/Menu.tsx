@@ -12,15 +12,19 @@ export default function Menu() {
 
   function renderMenuIcon() {
     return (
-      <div className="flex h-40 w-full items-center justify-between border-black bg-pink-400 px-28">
+      <div className="flex h-40 w-full items-center justify-between border-black bg-pink-400">
         <div className="block w-56">
-          <Image
-            alt="logo"
-            height={36}
-            layout="responsive"
-            src="/png/horizontales/Enciende-Logo-horizontal.png"
-            width={100}
-          />
+          <Link href="/home">
+            <a>
+              <Image
+                alt="logo"
+                height={36}
+                layout="responsive"
+                src="/png/horizontales/Enciende-Logo-horizontal.png"
+                width={100}
+              />
+            </a>
+          </Link>
         </div>
         <div className="z-10 flex items-center" onClick={openMenu}>
           <p className="mr-4 font-playfair text-xl leading-[101.8%] text-purple-400">
@@ -41,13 +45,13 @@ export default function Menu() {
         id="menu-container"
       >
         <div
-          className="absolute right-20 top-12 z-20 flex items-center"
+          className="absolute right-36 top-12 z-20 flex items-center pt-1"
           onClick={closeMenu}
         >
-          <p className="mr-4 font-playfair text-base leading-[101.8%] text-pink-200">
+          <p className="mr-4 font-playfair text-xl leading-[101.8%] text-pink-200">
             Cerrar
           </p>
-          <div className="rounded-full border border-pink-200">
+          <div className="rounded-full border border-pink-200 p-0">
             <CloseMenuIcon fill="#FDDED6" />
           </div>
         </div>
