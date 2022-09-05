@@ -52,7 +52,7 @@ function renderMenu(onClick) {
       </div>
       <div className="opacity-1 absolute inset-0 mx-auto flex h-screen w-screen items-center justify-center">
         <div
-          className="block rounded-full border-2 border-dashed border-gold-600 xl:h-[984px] xl:w-[984px] 2xl:h-[1200px] 2xl:w-[1200px]"
+          className="block rounded-full border-2 border-dashed border-gold-600 xl:h-[984px] xl:w-[984px] 2xl:h-[1400px] 2xl:w-[1400px]"
           id="animation"
         ></div>
       </div>
@@ -65,7 +65,7 @@ function renderMenu(onClick) {
         {[HOME_PAGE, ...PAGES].map(({ href, name }) => (
           <li className="xl:my-8 2xl:mb-16" key={href}>
             <Link href={href}>
-              <a className="font-playfair text-7xl leading-[101.8%] text-pink-200 hover:italic hover:text-orange-400">
+              <a className="font-playfair leading-[101.8%] text-pink-200 hover:italic hover:text-orange-400 xl:text-5xl 2xl:text-7xl">
                 {name}
               </a>
             </Link>
