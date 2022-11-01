@@ -5,11 +5,11 @@ import Layout from '../components/Layout/Layout'
 const CALENDARS = [
   {
     name: 'VER AGENDA REIKI PRESENCIAL',
-    url: 'https://calendly.com/holaenciendetupoder/sesion-de-reiki-presencial?back=1&month=2022-10',
+    url: 'https://calendly.com/holaenciendetupoder/sesion-de-reiki-presencial',
   },
   {
     name: 'VER AGENDA REIKI ONLINE',
-    url: 'https://calendly.com/holaenciendetupoder/sesion-de-reiki-online?back=1&month=2022-10',
+    url: 'https://calendly.com/holaenciendetupoder/60min',
   },
 ]
 
